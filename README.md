@@ -60,6 +60,14 @@ The system sends a user query to multiple language models. Each model generates 
 
 ---
 
+## ⚙️ Requirements
+- Install Ollama LLM locally and download the `phi3` model.  
+- Python dependencies: `fastapi`, `httpx`, `pydantic`, `difflib`, `uvicorn`.  
+- Run Ollama locally at `http://127.0.0.1:11434` (default).  
+- This app **cannot be used by others remotely** unless they also install Ollama.
+
+---
+
 ## ⚠️ Limitations
 - Dependent on external LLM APIs, which may have rate limits.  
 - Voting mechanism may not always capture nuanced correctness.

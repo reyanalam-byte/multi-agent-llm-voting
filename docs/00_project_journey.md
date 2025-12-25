@@ -6,7 +6,7 @@
 I began by setting up a Python Flask web application that called a single LLM model to generate answers from user prompts. This initial setup was intended to verify that the model integration worked correctly and that the API returned responses as expected. During this phase, the system successfully generated answers, but they were inconsistent and lacked the ability to provide multiple perspectives.
 
 Screenshot:  
-![Step 1 Screenshot](images/response 1.png)
+docs/screenshots/response 1.png
 
 ---
 

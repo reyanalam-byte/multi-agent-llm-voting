@@ -24,7 +24,7 @@ The limitations of the initial system became clear. Using only a single model pr
 To address these issues, three LLM agents were integrated to generate responses in parallel. A voting mechanism was implemented to select the most preferred answer, ensuring that the final output represented the consensus among agents. Additionally, asynchronous requests were used to optimize performance and reduce response times. These changes allowed the system to provide multiple perspectives efficiently and improve the overall user experience.
 
 Screenshot:  
-![Step 4 Screenshot](images/step4.png)
+docs/screenshots/error_after_using_httpx.png
 
 ---
 

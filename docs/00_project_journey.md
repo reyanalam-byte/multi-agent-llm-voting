@@ -24,7 +24,7 @@ The limitations of the initial system became clear. Using only a single model pr
 To address these issues, three LLM agents were integrated to generate responses in parallel. A voting mechanism was implemented to select the most preferred answer, ensuring that the final output represented the consensus among agents. Additionally, asynchronous requests were used to optimize performance and reduce response times. These changes allowed the system to provide multiple perspectives efficiently and improve the overall user experience.
 
 Screenshot:  
-docs/screenshots/error_after_using_httpx.png
+
 
 ---
 
@@ -32,7 +32,7 @@ docs/screenshots/error_after_using_httpx.png
 During implementation, asynchronous API calls initially caused race conditions, and some module imports, such as `utils.safe_max`, failed. These problems were due to incorrect import paths and improperly awaited asynchronous calls. The issues were resolved by correcting the imports, using `asyncio.gather` to safely handle parallel API requests, and adding error handling to retry failed requests. After these fixes, the system became stable and reliable.
 
 Screenshot:  
-![Step 5 Screenshot](images/step5.png)
+docs/screenshots/error_after_using_httpx.png
 
 ---
 
@@ -40,4 +40,4 @@ Screenshot:
 The final system features three independent LLM agents generating responses simultaneously. The voting mechanism identifies and highlights the most preferred answer, and all responses are displayed clearly on the interface. Asynchronous execution ensures fast and consistent results. Users can now submit a prompt, receive multiple answers from different agents, and see the consensus response highlighted for clarity.
 
 Screenshot:  
-![Step 6 Screenshot](images/step6.png)
+
